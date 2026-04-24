@@ -16,19 +16,19 @@
     IMAGENS DO PARALLAX
 ========================================= */
 #hero {
-    background-image: url('img/1.jpg'); /**/
+    background-image: url('img/imagem-1.jpg?v=2'); /**/
 }
 
 #cta-1 {
-    background-image: url('img/2.jpg');
+    background-image: url('img/imagem-2.jpg?v=2');
 }
 
 #cta-2 {
-    background-image: url('img/3.jpg');
+    background-image: url('img/imagem-3.jpg?v=2');
 }
 
 #contatos {
-    background-image: url('img/4.jpg');
+    background-image: url('img/imagem-4.jpg');
 }
 
 .parallax-bg {
