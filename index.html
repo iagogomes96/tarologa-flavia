@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================================
+         SEO BÁSICO E META TAGS
+    ========================================= -->
+    <title>Taróloga Flávia - Especialista em Amarração Amorosa e Tarot</title>
+    <meta name="description"
+        content="Mãe de Santo e Taróloga Flávia, especialista em Amarração Amorosa, limpezas espirituais, búzios e tarot. Encontre paz, proteção e abertura de caminhos.">
+    <meta name="keywords"
+        content="taróloga, amarração amorosa, limpeza espiritual, mãe de santo, búzios, tarot, trabalhos espirituais, abertura de caminhos, união de casais, são paulo">
+    <meta name="author" content="Taróloga Flávia">
+    <meta name="robots" content="index, follow">
+
+    <!-- Link Canônico (Substitua pelo seu domínio real quando publicar) -->
+    <link rel="canonical" href="https://www.tarologaflavia.com.br/">
+
+    <!-- =========================================
+         OPEN GRAPH (WhatsApp, Facebook, etc.)
+    ========================================= -->
+    <meta property="og:title" content="Taróloga Flávia - Especialista em Amarração Amorosa">
+    <meta property="og:description"
+        content="Encontre o direcionamento espiritual para os seus caminhos e reconquiste a paz no amor com a Taróloga Flávia.">
+    <!-- Substitua a URL abaixo pela imagem que deseja que apareça ao compartilhar o link -->
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:url" content="https://www.tarologaflavia.com.br/">
+    <meta property="og:type" content="website">
+
+    <!-- =========================================
+         PRELOAD DE RECURSOS CRÍTICOS (Performance)
+    ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Preload da imagem de fundo do Hero para o LCP (Largest Contentful Paint) carregar mais rápido -->
+    <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=2000">
+
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================================
+           VARIÁVEIS DE CORES E FONTES
+        ========================================= */
+        :root {
+            --primary: #1F0A33;
+            /* Roxo escuro base */
+            --text-light: #F5E5EC;
+            /* Texto claro padrão */
+            --accent: #E0CD97;
+            /* Dourado para destaques no fundo escuro */
+            --light-green: #EAF0EB;
+            /* Verde sálvia claro (Leveza) */
+            --dark-text: #1F0A33;
+            /* Texto escuro (para fundo claro) */
+
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+
+        /* =========================================
+           IMAGENS DO PARALLAX (Altere as URLs aqui)
+        ========================================= */
+        #hero {
+            background-image: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=2000');
+        }
+
+        #cta-1 {
+            background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=2000');
+        }
+
+        #cta-2 {
+            background-image: url('https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?auto=format&fit=crop&q=80&w=2000');
+        }
+
+        #contatos {
+            background-image: url('https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=2000');
+        }
+
+        /* Configuração base do Parallax */
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* =========================================
+           RESET E ESTILOS GERAIS
+        ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background-color: var(--accent);
+            color: var(--primary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        /* Utilitários Gerais */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Utilitário de Acessibilidade (Oculta visualmente mas lê para leitores de tela) */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        /* Modificadores de Container */
+        .container-800 {
+            max-width: 800px;
+        }
+
+        .container-900 {
+            max-width: 900px;
+        }
+
+        .container-1000 {
+            max-width: 1000px;
+        }
+
+        /* Tipografia */
+        .font-serif {
+            font-family: var(--font-serif);
+        }
+
+        .text-accent {
+            color: var(--accent);
+        }
+
+        .text-primary {
+            color: var(--primary);
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(224, 205, 151, 0.3);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--primary);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffffff;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent);
+            color: var(--primary);
+            transform: none;
+        }
+
+        .btn-large {
+            padding: 20px 40px;
+            font-size: 18px;
+        }
+
+        /* Overlay para seções Parallax */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .overlay-dark {
+            background-color: rgba(31, 10, 51, 0.85);
+        }
+
+        .overlay-darker {
+            background-color: rgba(31, 10, 51, 0.95);
+        }
+
+        .overlay-gradient {
+            background: linear-gradient(to top, var(--primary), rgba(31, 10, 51, 0.85), rgba(31, 10, 51, 0.95));
+        }
+
+        .relative-z10 {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* =========================================
+           HEADER & NAV
+        ========================================= */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            padding: 20px 0;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+
+        .header.scrolled {
+            background-color: var(--primary);
+            padding: 12px 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(224, 205, 151, 0.2);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .mobile-toggle {
+            display: block;
+            background: none;
+            border: none;
+            color: var(--accent);
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--primary);
+            border-bottom: 1px solid rgba(224, 205, 151, 0.2);
+            flex-direction: column;
+            padding: 16px 24px;
+            gap: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--accent);
+        }
+
+        /* =========================================
+           SEÇÃO: HERO
+        ========================================= */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-bottom: 48px;
+        }
+
+        .hero-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 120px;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .profile-container {
+            position: relative;
+            margin-bottom: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            /* Mais espaço para a poeira cósmica circular */
+        }
+
+        .profile-glow {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            right: 5%;
+            bottom: 5%;
+            background-color: var(--accent);
+            border-radius: 50%;
+            filter: blur(25px);
+            opacity: 0.3;
+            animation: cosmic-pulse 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes cosmic-pulse {
+            0% {
+                opacity: 0.2;
+                filter: blur(20px);
+                transform: scale(0.95);
+            }
+
+            100% {
+                opacity: 0.5;
+                filter: blur(35px);
+                transform: scale(1.05);
+            }
+        }
+
+        /* Poeira Cósmica - Camada Externa (Partículas Mágicas girando) */
+        .profile-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background-image:
+                radial-gradient(circle at 50% 2%, var(--accent) 2px, transparent 5px),
+                radial-gradient(circle at 85% 15%, var(--accent) 1px, transparent 3px),
+                radial-gradient(circle at 98% 50%, var(--accent) 2px, transparent 4px),
+                radial-gradient(circle at 85% 85%, var(--accent) 1.5px, transparent 3px),
+                radial-gradient(circle at 50% 98%, var(--accent) 2.5px, transparent 6px),
+                radial-gradient(circle at 15% 85%, var(--accent) 1px, transparent 3px),
+                radial-gradient(circle at 2% 50%, var(--accent) 2px, transparent 4px),
+                radial-gradient(circle at 15% 15%, var(--accent) 1.5px, transparent 3px);
+            filter: drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 10px var(--accent));
+            animation: spin-slow 25s linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Poeira Cósmica - Camada Interna (Girando ao contrário para efeito de nuvem estelar) */
+        .profile-container::after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            right: 14px;
+            bottom: 14px;
+            border-radius: 50%;
+            background-image:
+                radial-gradient(circle at 35% 5%, var(--accent) 1.5px, transparent 3px),
+                radial-gradient(circle at 95% 35%, var(--accent) 1px, transparent 2px),
+                radial-gradient(circle at 65% 95%, var(--accent) 2px, transparent 5px),
+                radial-gradient(circle at 5% 65%, var(--accent) 1.5px, transparent 3px),
+                radial-gradient(circle at 25% 25%, var(--accent) 1px, transparent 2px);
+            filter: drop-shadow(0 0 5px var(--accent));
+            animation: spin-slow 15s linear infinite reverse;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .profile-img {
+            position: relative;
+            width: 192px;
+            height: 192px;
+            object-fit: cover;
+            border-radius: 50%;
+            z-index: 2;
+            box-shadow: 0 0 20px rgba(31, 10, 51, 0.8), 0 0 40px rgba(224, 205, 151, 0.3);
+        }
+
+        .hero-title {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: rgba(245, 229, 236, 0.8);
+            margin-bottom: 32px;
+            max-width: 450px;
+        }
+
+        /* Roda de Signos (Posicionada à direita) */
+        .zodiac-wheel-wrapper {
+            position: absolute;
+            right: -40%;
+            /* Movido para a direita para equilibrar o layout */
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.15;
+            /* Transparência mística */
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .zodiac-wheel {
+            width: 40rem;
+            height: 40rem;
+            animation: spin-slow 40s linear infinite;
+            object-fit: contain;
+            mix-blend-mode: screen;
+            /* Ajuda a mesclar a imagem com o fundo, ótimo para JPG com fundo escuro ou PNG */
+        }
+
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* =========================================
+           SEÇÕES CLARAS (Sobre, Serviços, Depoimentos)
+        ========================================= */
+        .section-light {
+            background-color: var(--light-green);
+            color: var(--dark-text);
+            padding: 96px 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+
+        /* SOBRE */
+        .about-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 64px;
+        }
+
+        .about-img-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-img-container {
+            position: relative;
+            width: 288px;
+            height: 288px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .about-img-backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(31, 10, 51, 0.1);
+            border-radius: 16px;
+            transform: rotate(6deg) scale(1.05);
+        }
+
+        .about-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            color: rgba(31, 10, 51, 0.8);
+        }
+
+        .social-icons-row {
+            margin-top: 40px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .icon-circle {
+            width: 48px;
+            height: 48px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            border: 1px solid rgba(31, 10, 51, 0.2);
+            transition: all 0.3s;
+        }
+
+        .icon-circle:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        /* =========================================
+           SEÇÃO: CTAs (Parallax)
+        ========================================= */
+        .cta-section {
+            padding: 96px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1.4;
+            margin-bottom: 32px;
+        }
+
+        .cta-heart-icon {
+            margin: 0 auto 24px auto;
+            opacity: 0.8;
+            display: block;
+        }
+
+        /* =========================================
+           SEÇÃO: SERVIÇOS
+        ========================================= */
+        .services-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .services-header p {
+            font-size: 18px;
+            color: rgba(31, 10, 51, 0.7);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            border: 1px solid rgba(31, 10, 51, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* Centraliza o conteúdo geral do card */
+        }
+
+        .service-card:hover {
+            border-color: rgba(31, 10, 51, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            color: var(--primary);
+            margin-bottom: 24px;
+            transition: transform 0.3s;
+            transform-origin: center;
+            /* Mudado de left para center para a animação de zoom crescer pelo meio */
+            display: flex;
+            justify-content: center;
+            /* Garante que o ícone fique perfeitamente centralizado */
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(31, 10, 51, 0.8);
+            text-align: justify;
+            /* Deixa a descrição em formato de bloco alinhado nas pontas */
+        }
+
+        /* =========================================
+           SEÇÃO: DEPOIMENTOS
+        ========================================= */
+        .testimonials-section {
+            overflow: hidden;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial-slide {
+            flex: 0 0 100%;
+            padding: 0 12px;
+        }
+
+        .testimonial-card {
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid rgba(31, 10, 51, 0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stars {
+            color: #D4AF37;
+            display: flex;
+            gap: 4px;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-quote {
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.6;
+            color: rgba(31, 10, 51, 0.8);
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--primary);
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 40px;
+        }
+
+        .btn-control {
+            background: none;
+            border: 1px solid rgba(31, 10, 51, 0.2);
+            color: var(--primary);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-control:hover:not(:disabled) {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .btn-control:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        /* =========================================
+           SEÇÃO: CONTATOS
+        ========================================= */
+        .contact-section {
+            padding: 96px 0;
+        }
+
+        .contact-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 64px auto;
+        }
+
+        .contact-header p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: rgba(245, 229, 236, 0.9);
+        }
+
+        .contact-box {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            background-color: rgba(31, 10, 51, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(224, 205, 151, 0.2);
+        }
+
+        .contact-left,
+        .contact-right {
+            width: 100%;
+        }
+
+        .contact-left {
+            border-bottom: 1px solid rgba(224, 205, 151, 0.2);
+            padding-bottom: 40px;
+            font-style: normal;
+        }
+
+        .contact-box-title {
+            font-size: 24px;
+            color: var(--accent);
+            margin-bottom: 32px;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            color: var(--text-light);
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .contact-link:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background-color: var(--primary);
+            color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(224, 205, 151, 0.2);
+            transition: all 0.3s;
+        }
+
+        .contact-link:hover .contact-icon {
+            background-color: var(--accent);
+            color: var(--primary);
+        }
+
+        .contact-link:hover {
+            color: var(--accent);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .info-icon {
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .info-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .info-desc {
+            color: rgba(245, 229, 236, 0.7);
+            line-height: 1.5;
+            font-style: normal;
+            /* Override address default italic */
+        }
+
+        .final-cta {
+            margin-top: 64px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+        .footer {
+            background-color: #140622;
+            padding: 32px 0;
+            text-align: center;
+            color: rgba(245, 229, 236, 0.5);
+            font-size: 14px;
+            border-top: 1px solid rgba(224, 205, 151, 0.1);
+        }
+
+        /* =========================================
+           BOTÃO WHATSAPP FLUTUANTE
+        ========================================= */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background-color: #25D366;
+            color: #ffffff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1ebe53;
+            transform: scale(1.1) translateY(0);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        /* =========================================
+           MEDIA QUERIES (Responsividade)
+        ========================================= */
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+
+            .mobile-toggle {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: none !important;
+            }
+
+            .hero-layout {
+                flex-direction: row;
+                margin-top: 112px;
+            }
+
+            .hero-title {
+                font-size: 48px;
+            }
+
+            .hero-subtitle {
+                font-size: 20px;
+            }
+
+            .profile-img {
+                width: 256px;
+                height: 256px;
+            }
+
+            .zodiac-wheel-wrapper {
+                right: -10%;
+                left: auto;
+            }
+
+            .zodiac-wheel {
+                width: 60rem;
+                height: 60rem;
+            }
+
+            .about-layout {
+                flex-direction: row;
+            }
+
+            .about-img-wrapper,
+            .about-text {
+                width: 50%;
+            }
+
+            .about-img-container {
+                width: 384px;
+                height: 384px;
+            }
+
+            .section-title {
+                font-size: 40px;
+            }
+
+            .cta-title {
+                font-size: 48px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonial-slide {
+                flex: 0 0 50%;
+            }
+
+            .contact-box {
+                flex-direction: row;
+                padding: 40px;
+            }
+
+            .contact-left {
+                border-bottom: none;
+                border-right: 1px solid rgba(224, 205, 151, 0.2);
+                padding-bottom: 0;
+                padding-right: 40px;
+            }
+
+            .contact-right {
+                padding-left: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 16px;
+                right: 16px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 60px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================
+         1. HEADER / MENU SEMÂNTICO
+    ========================================= -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <div class="brand font-serif">
+                Taróloga Flávia
+            </div>
+
+            <nav aria-label="Navegação Principal">
+                <!-- Menu Desktop -->
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+
+                <!-- Botão Menu Mobile -->
+                <button id="mobile-menu-btn" class="mobile-toggle" aria-expanded="false"
+                    aria-label="Abrir menu de navegação" aria-controls="mobile-menu">
+                    <i data-lucide="menu" id="menu-icon-open" aria-hidden="true"></i>
+                    <i data-lucide="x" id="menu-icon-close" class="hidden" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Dropdown Menu Mobile -->
+        <nav id="mobile-menu" class="mobile-menu" aria-label="Navegação Mobile">
+            <a href="#sobre" class="mobile-link">Sobre</a>
+            <a href="#servicos" class="mobile-link">Serviços</a>
+            <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+            <a href="#contatos" class="mobile-link">Contatos</a>
+        </nav>
+    </header>
+
+    <!-- Tudo que é conteúdo principal fica dentro de <main> -->
+    <main>
+
+        <!-- =========================================
+             2. HERO SECTION
+        ========================================= -->
+        <section id="hero" class="hero-section parallax-bg" aria-label="Início">
+            <div class="overlay overlay-dark" aria-hidden="true"></div>
+
+            <!-- Roda de Signos Animada (Imagem) -->
+            <div class="zodiac-wheel-wrapper" aria-hidden="true">
+                <!-- Substitua o src abaixo pela URL da sua imagem da roda de signos -->
+                <!-- Sugestão: Use uma imagem .PNG com fundo transparente ou um .JPG de linhas douradas em fundo preto -->
+                <img src="img/circulo-zodiaco.png" alt="Roda do Zodíaco" class="zodiac-wheel" />
+            </div>
+
+            <div class="container relative-z10">
+                <div class="hero-layout">
+                    <div class="hero-content">
+
+                        <!-- Uso de <figure> para imagem com significado -->
+                        <figure class="profile-container">
+                            <div class="profile-glow" aria-hidden="true"></div>
+                            <!-- Imagem acima da dobra recebe fetchpriority="high" -->
+                            <img src="img/perfil.jpeg"
+                                alt="Retrato da Taróloga Flávia, Especialista em Amarração Amorosa" class="profile-img"
+                                fetchpriority="high" />
+                        </figure>
+
+                        <h1 class="hero-title font-serif font-bold">
+                            <span class="sr-only">Taróloga Flávia - </span>
+                            Especialista em <br /> <span class="text-accent italic">Amarração Amorosa</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Encontre o direcionamento espiritual para os seus caminhos e reconquiste a paz no amor.
+                        </p>
+
+                        <!-- Link dinâmico com data-link="whatsapp" -->
+                        <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-primary"
+                            aria-label="Agende a sua consulta via WhatsApp">
+                            <i data-lucide="message-circle" aria-hidden="true"></i>
+                            Agende a sua consulta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             3. SOBRE (Cor Clara)
+        ========================================= -->
+        <section id="sobre" class="section-light" aria-labelledby="sobre-title">
+            <div class="container about-layout">
+
+                <div class="about-img-wrapper">
+                    <figure class="about-img-container">
+                        <div class="about-img-backdrop" aria-hidden="true"></div>
+                        <!-- Imagem abaixo da dobra recebe loading="lazy" -->
+                        <img src="img/about.jpeg"
+                            alt="Taróloga Flávia trabalhando em seu ambiente de atendimento espiritual"
+                            class="about-img" loading="lazy" />
+                    </figure>
+                </div>
+
+                <div class="about-text">
+                    <h2 id="sobre-title" class="section-title font-serif font-bold text-primary">Sobre a Flávia</h2>
+
+                    <p>Mãe de Santo e taróloga, Flávia tem dedicado os últimos 15 anos de sua vida ao cuidado espiritual
+                        e ao auxílio de pessoas que buscam respostas, equilíbrio e verdadeira transformação.</p>
+                    <p>Seu trabalho é inteiramente guiado pela fé, pela sensibilidade e por uma forte conexão com o
+                        plano espiritual. Ela acredita que cada história é única, conduzindo cada caminho de forma
+                        acolhedora e empática.</p>
+                    <p>Lidando com os seus desafios da forma mais respeitosa e sigilosa possível, com a Flávia você
+                        encontrará um porto seguro, um lugar onde a sua confiança e a sua paz de espírito vêm sempre em
+                        primeiro lugar.</p>
+
+                    <nav class="social-icons-row" aria-label="Redes Sociais da Taróloga">
+                        <a href="#" data-link="instagram" class="icon-circle"
+                            aria-label="Acessar o Instagram da Taróloga Flávia" target="_blank" rel="noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" data-link="tiktok" class="icon-circle"
+                            aria-label="Acessar o TikTok da Taróloga Flávia" target="_blank" rel="noreferrer">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 15.68a6.34 6.34 0 0 0 6.27 6.32 6.32 6.32 0 0 0 6.16-5.59V9.89a8.49 8.49 0 0 0 4.19 1.48V7.93a5.55 5.55 0 0 1-2.03-.24z" />
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             4. CTA 1
+        ========================================= -->
+        <section id="cta-1" class="cta-section parallax-bg" aria-label="Chamada para Ação">
+            <div class="overlay overlay-dark" aria-hidden="true"></div>
+            <div class="container relative-z10 container-800">
+                <h2 class="cta-title font-serif text-light">
+                    Encontre a <span class="text-accent font-bold italic">paz</span> e as <span
+                        class="text-accent font-bold italic">respostas</span> que o seu coração procura.
+                </h2>
+                <!-- Link dinâmico com data-link="whatsapp" -->
+                <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-outline"
+                    aria-label="Falar com a Flávia via WhatsApp agora">
+                    <i data-lucide="message-circle" aria-hidden="true"></i>
+                    Falar com a Flávia agora
+                </a>
+            </div>
+        </section>
+
+        <!-- =========================================
+             5. SERVIÇOS
+        ========================================= -->
+        <section id="servicos" class="section-light" aria-labelledby="servicos-title">
+            <div class="container">
+                <header class="services-header">
+                    <h2 id="servicos-title" class="section-title font-serif font-bold text-primary">Meus Serviços</h2>
+                    <p>Cuidado espiritual conduzido com seriedade e respeito à sua jornada.</p>
+                </header>
+
+                <ul class="services-grid">
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="sparkles" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Limpezas Espirituais</h3>
+                            <p>Purificação de energias densas, restaurando o equilíbrio, a paz interior e a harmonia
+                                vital em sua vida.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="heart" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Quebras de Orgulho</h3>
+                            <p>Trabalhos focados em amolecer corações rígidos, promovendo o perdão, a compreensão e a
+                                reaproximação com leveza.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="shield-check" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Libertação de Vícios</h3>
+                            <p>Apoio espiritual dedicado a afastar dependências e energias negativas, fortalecendo a
+                                vontade e a renovação pessoal.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="moon" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Quebras de Demandas</h3>
+                            <p>Desfazimento de trabalhos e feitiços enviados contra você, garantindo proteção espiritual
+                                e a libertação de bloqueios.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="sun" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Consultas Espirituais</h3>
+                            <p>Essencial na sua jornada, a consulta identifica a raiz dos problemas e revela soluções,
+                                trazendo direcionamento e clareza.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="map-pin" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Abertura de Caminhos</h3>
+                            <p>Remoção de bloqueios e alinhamento de energias. Novas portas e oportunidades de
+                                prosperidade se abrirão com proteção.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="sparkles" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Banhos e Simpatias</h3>
+                            <p>Cuidados espirituais poderosos que auxiliam no magnetismo pessoal, abrindo portas na vida
+                                amorosa e prosperidade financeira.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="star" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Búzios e Tarot</h3>
+                            <p>Leitura oracular profunda para orientar decisões, prever tendências e revelar com
+                                precisão o que está oculto no seu destino.</p>
+                        </article>
+                    </li>
+                    <li class="service-card">
+                        <article>
+                            <div class="service-icon" aria-hidden="true"><i data-lucide="heart" width="32"
+                                    height="32"></i></div>
+                            <h3 class="font-serif font-bold">Trabalhos Amorosos</h3>
+                            <p>Em amarrações, uniões e adoçamentos, o foco é fortalecer vínculos e aproximar corações
+                                com total responsabilidade.</p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- =========================================
+             6. CTA 2 - AMOROSO
+        ========================================= -->
+        <section id="cta-2" class="cta-section parallax-bg" aria-label="Especialista em unir caminhos">
+            <div class="overlay overlay-gradient" aria-hidden="true"></div>
+            <div class="container relative-z10 container-900">
+                <i data-lucide="heart" width="64" height="64" class="text-accent cta-heart-icon" aria-hidden="true"></i>
+                <h2 class="cta-title font-serif text-light">
+                    Especialista em unir caminhos, a Mãe de Santo e taróloga Flávia atua com <span
+                        class="text-accent font-bold">firmeza</span>, <span
+                        class="text-accent font-bold">respeito</span> e uma <span class="text-accent font-bold">profunda
+                        conexão espiritual</span> em cada trabalho realizado.
+                </h2>
+                <!-- Link dinâmico com data-link="whatsapp" -->
+                <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-primary btn-large"
+                    aria-label="Agendar sua orientação amorosa pelo WhatsApp">
+                    <i data-lucide="message-circle" aria-hidden="true"></i>
+                    Agendar Orientação Amorosa
+                </a>
+            </div>
+        </section>
+
+        <!-- =========================================
+             7. DEPOIMENTOS
+        ========================================= -->
+        <section id="depoimentos" class="section-light testimonials-section" aria-labelledby="depoimentos-title">
+            <div class="container container-1000">
+                <h2 id="depoimentos-title" class="section-title font-serif font-bold text-primary text-center">Vozes de
+                    Quem Confia</h2>
+
+                <div class="carousel-wrapper">
+                    <ul id="carousel-track" class="carousel-track">
+
+                        <li class="testimonial-slide">
+                            <figure class="testimonial-card">
+                                <div class="stars" aria-hidden="true">
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                </div>
+                                <blockquote class="testimonial-quote">"A Flávia trouxe a luz que faltava na minha vida.
+                                    Consegui a paz no meu relacionamento que tanto buscava."</blockquote>
+                                <figcaption class="testimonial-author">— Luis</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="testimonial-slide">
+                            <figure class="testimonial-card">
+                                <div class="stars" aria-hidden="true">
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                </div>
+                                <blockquote class="testimonial-quote">"Depois que a Flávia me ajudou, tudo mudou. Agora
+                                    ele vem me ver sempre!"</blockquote>
+                                <figcaption class="testimonial-author">— Lu</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="testimonial-slide">
+                            <figure class="testimonial-card">
+                                <div class="stars" aria-hidden="true">
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                </div>
+                                <blockquote class="testimonial-quote">"Eu nunca fui tão feliz. Antes era tudo muito
+                                    difícil, mas agora ele me leva no shopping para fazer compras, me leva pra jantar.
+                                    Está sendo tudo muito perfeito"</blockquote>
+                                <figcaption class="testimonial-author">— Juliana</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="testimonial-slide">
+                            <figure class="testimonial-card">
+                                <div class="stars" aria-hidden="true">
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                </div>
+                                <blockquote class="testimonial-quote">"O trabalho foi conduzido com muito respeito. Hoje
+                                    estou vivendo a melhor fase do meu casamento."</blockquote>
+                                <figcaption class="testimonial-author">— Roberto</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="testimonial-slide">
+                            <figure class="testimonial-card">
+                                <div class="stars" aria-hidden="true">
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                </div>
+                                <blockquote class="testimonial-quote">"Estava perdido profissionalmente e as consultas
+                                    me deram o norte que eu precisava. Mudou tudo."</blockquote>
+                                <figcaption class="testimonial-author">— Carlos</figcaption>
+                            </figure>
+                        </li>
+
+                        <li class="testimonial-slide">
+                            <figure class="testimonial-card">
+                                <div class="stars" aria-hidden="true">
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                    <i data-lucide="star" width="20" height="20" fill="currentColor"></i>
+                                </div>
+                                <blockquote class="testimonial-quote">"A Flávia é uma profissional incrível. Me ajudou a
+                                    superar um momento muito difícil e hoje estou vivendo um amor que eu achava que
+                                    tinha perdido."</blockquote>
+                                <figcaption class="testimonial-author">— Mari</figcaption>
+                            </figure>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="carousel-controls">
+                    <button id="btn-prev" class="btn-control" aria-label="Depoimentos anteriores"><i
+                            data-lucide="chevron-left" aria-hidden="true"></i></button>
+                    <button id="btn-next" class="btn-control" aria-label="Próximos depoimentos"><i
+                            data-lucide="chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             8. CONTATO & ATENDIMENTO
+        ========================================= -->
+        <section id="contatos" class="parallax-bg contact-section" aria-labelledby="contatos-title">
+            <div class="overlay overlay-darker" aria-hidden="true"></div>
+
+            <div class="container relative-z10">
+                <header class="contact-header">
+                    <h2 id="contatos-title" class="section-title font-serif font-bold text-accent">Contato e Atendimento
+                    </h2>
+                    <p>Se você sente que precisa de <span class="text-accent font-bold">mudanças</span>, está com <span
+                            class="text-accent font-bold">problemas no amor</span> ou busca <span
+                            class="text-accent font-bold">respostas claras</span>, Flávia está aqui para te <span
+                            class="text-accent font-bold">orientar</span>, <span
+                            class="text-accent font-bold">ajudar</span> e <span class="text-accent font-bold">abrir seus
+                            caminhos</span>.</p>
+                </header>
+
+                <div class="contact-box">
+
+                    <!-- Esquerda: Redes Sociais -->
+                    <address class="contact-left">
+                        <h3 class="contact-box-title font-serif font-bold">Redes de Contato</h3>
+
+                        <!-- Uso do data-link para links e data-text para os textos de exibição -->
+                        <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="contact-link"
+                            aria-label="Falar pelo número de WhatsApp">
+                            <div class="contact-icon" aria-hidden="true"><i data-lucide="message-circle"></i></div>
+                            <span data-text="whatsapp-display">(11) 99999-9999</span>
+                        </a>
+
+                        <a href="#" data-link="instagram" target="_blank" rel="noreferrer" class="contact-link"
+                            aria-label="Acessar Instagram">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <span data-text="instagram-display">@tarologa.flavia</span>
+                        </a>
+
+                        <a href="#" data-link="tiktok" target="_blank" rel="noreferrer" class="contact-link"
+                            aria-label="Acessar TikTok">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 15.68a6.34 6.34 0 0 0 6.27 6.32 6.32 6.32 0 0 0 6.16-5.59V9.89a8.49 8.49 0 0 0 4.19 1.48V7.93a5.55 5.55 0 0 1-2.03-.24z" />
+                                </svg>
+                            </div>
+                            <span data-text="tiktok-display">@tarologa.flavia</span>
+                        </a>
+                    </address>
+
+                    <!-- Direita: Atendimento -->
+                    <div class="contact-right">
+                        <h3 class="contact-box-title font-serif font-bold">Horários e Local</h3>
+
+                        <div class="info-item">
+                            <i data-lucide="sparkles" width="32" height="32" class="info-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="info-title">Não adie sua felicidade</h4>
+                                <p class="info-desc">Quanto mais você se conecta, mais claro fica o caminho.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i data-lucide="clock" width="32" height="32" class="info-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="info-title">Horário de Funcionamento</h4>
+                                <p class="info-desc">Atendimento <span class="text-accent font-bold">24 horas</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Final CTA -->
+                <div class="final-cta">
+                    <!-- Link dinâmico com data-link="whatsapp" -->
+                    <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-primary btn-large"
+                        aria-label="Iniciar atendimento agora pelo WhatsApp">
+                        <i data-lucide="message-circle" width="28" height="28" aria-hidden="true"></i>
+                        Iniciar meu Atendimento Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================
+         BOTÃO WHATSAPP FLUTUANTE
+    ========================================= -->
+    <!-- Link dinâmico com data-link="whatsapp" -->
+    <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" id="whatsapp-float" class="whatsapp-float"
+        aria-label="Iniciar conversa com a Flávia no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <!-- =========================================
+         FOOTER SEMÂNTICO
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Taróloga Flávia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================= -->
+    <script src="script.js"></script>
+</body>
+
+</html>
