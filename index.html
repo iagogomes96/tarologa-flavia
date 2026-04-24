@@ -25,9 +25,7 @@
     <meta property="og:title" content="Taróloga Flávia - Especialista em Amarração Amorosa">
     <meta property="og:description"
         content="Encontre o direcionamento espiritual para os seus caminhos e reconquiste a paz no amor com a Taróloga Flávia.">
-    <!-- Substitua a URL abaixo pela imagem que deseja que apareça ao compartilhar o link -->
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:image" content="img/about.jpeg">
     <meta property="og:url" content="https://www.tarologaflavia.com.br/">
     <meta property="og:type" content="website">
 
@@ -40,9 +38,11 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Preload da imagem de fundo do Hero para o LCP (Largest Contentful Paint) carregar mais rápido -->
-    <link rel="preload" as="image"
-        href="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=2000">
+    <link rel="preload" as="image" href="img/imagem-1.jpg">
+    <link rel="preload" as="image" href="img/imagem-2.jpg">
+    <link rel="preload" as="image" href="img/imagem-3.jpg">
+    <link rel="preload" as="image" href="img/imagem-4.jpg">
+    <link rel="preload" as="image" href="img/circulo-zodiaco.png">
 
     <!-- Ícones Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -1134,7 +1134,6 @@
                         <!-- Uso de <figure> para imagem com significado -->
                         <figure class="profile-container">
                             <div class="profile-glow" aria-hidden="true"></div>
-                            <!-- Imagem acima da dobra recebe fetchpriority="high" -->
                             <img src="img/perfil.jpeg"
                                 alt="Retrato da Taróloga Flávia, Especialista em Amarração Amorosa" class="profile-img"
                                 fetchpriority="high" />
@@ -1148,7 +1147,6 @@
                             Encontre o direcionamento espiritual para os seus caminhos e reconquiste a paz no amor.
                         </p>
 
-                        <!-- Link dinâmico com data-link="whatsapp" -->
                         <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-primary"
                             aria-label="Agende a sua consulta via WhatsApp">
                             <i data-lucide="message-circle" aria-hidden="true"></i>
@@ -1168,7 +1166,6 @@
                 <div class="about-img-wrapper">
                     <figure class="about-img-container">
                         <div class="about-img-backdrop" aria-hidden="true"></div>
-                        <!-- Imagem abaixo da dobra recebe loading="lazy" -->
                         <img src="img/about.jpeg"
                             alt="Taróloga Flávia trabalhando em seu ambiente de atendimento espiritual"
                             class="about-img" loading="lazy" />
@@ -1338,7 +1335,6 @@
                         class="text-accent font-bold">respeito</span> e uma <span class="text-accent font-bold">profunda
                         conexão espiritual</span> em cada trabalho realizado.
                 </h2>
-                <!-- Link dinâmico com data-link="whatsapp" -->
                 <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-primary btn-large"
                     aria-label="Agendar sua orientação amorosa pelo WhatsApp">
                     <i data-lucide="message-circle" aria-hidden="true"></i>
@@ -1482,11 +1478,9 @@
 
                 <div class="contact-box">
 
-                    <!-- Esquerda: Redes Sociais -->
                     <address class="contact-left">
                         <h3 class="contact-box-title font-serif font-bold">Redes de Contato</h3>
 
-                        <!-- Uso do data-link para links e data-text para os textos de exibição -->
                         <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="contact-link"
                             aria-label="Falar pelo número de WhatsApp">
                             <div class="contact-icon" aria-hidden="true"><i data-lucide="message-circle"></i></div>
@@ -1519,7 +1513,6 @@
                         </a>
                     </address>
 
-                    <!-- Direita: Atendimento -->
                     <div class="contact-right">
                         <h3 class="contact-box-title font-serif font-bold">Horários e Local</h3>
 
@@ -1543,7 +1536,6 @@
 
                 <!-- Botão Final CTA -->
                 <div class="final-cta">
-                    <!-- Link dinâmico com data-link="whatsapp" -->
                     <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" class="btn btn-primary btn-large"
                         aria-label="Iniciar atendimento agora pelo WhatsApp">
                         <i data-lucide="message-circle" width="28" height="28" aria-hidden="true"></i>
@@ -1558,7 +1550,6 @@
     <!-- =========================================
          BOTÃO WHATSAPP FLUTUANTE
     ========================================= -->
-    <!-- Link dinâmico com data-link="whatsapp" -->
     <a href="#" data-link="whatsapp" target="_blank" rel="noreferrer" id="whatsapp-float" class="whatsapp-float"
         aria-label="Iniciar conversa com a Flávia no WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
